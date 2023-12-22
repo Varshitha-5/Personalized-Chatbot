@@ -1,0 +1,49 @@
+#chatbot 
+print("helloo!!")
+print("Say thank you to stop the conversation...(mentioned in lower case only)")
+a=""
+b=""
+c=""
+d=""
+while("thank you " not in a):
+  a=input("How can I help you today?")
+  if('vehicle' in a):
+    b=input("Which type of vehicle you are looking for?")
+    if('car' in b):
+      c=input("What color of car would you like to buy?")
+      if('white' in c):
+        print("It is more visible on roads and safe to drive.")
+        d=input("Do you need any extra information about the color?")
+        if('significance' in d):
+          print("white cars represent purity and modernity")
+      elif('black' in c):
+        print("It is easy to maintain.")
+        d=input("Do you need any extra information about the color?")
+        if('significance' in d):
+          print("Black colour is associated with sophistication and power")
+      elif('dark colors' in c):
+        print("It is hard to see.")
+      elif('blue' in c):
+        print("Blue cars are known for their calming effect on both drivers and observers.")
+        d=input("Do you need any extra information about the color?")
+        if('significance' in d):
+          print("Blue colour is associated with the sky and the ocean, contributing to its ability to instil a sense of openness and freedom")
+      elif('red' in c):
+        print("On the road, red cars might be perceived as attention-grabbing .")
+        d=input("Do you need any extra information about the color?")
+        if('significance' in d):
+          print("Red cars wield a strong psychological influence, symbolising passion and excitement.")
+      elif('green' in c):
+        print("green car are likely to be more traditional.")
+        d=input("Do you need any extra information about the color?")
+        if('significance' in d):
+          print("Green cars are seen in connection with nature, balance, and harmony.")
+      elif('silver' in c):
+        print("Silver cars are a great choice for a business lease car as they are modern but also look very professional.")
+        d=input("Do you need any extra information about the color?")
+        if('significance' in d):
+          print("Silver cars hold modern and innovative connotations.")
+      else:
+        print("Sorry,I can not understand.")
+  elif('thank you' in a):
+    break
